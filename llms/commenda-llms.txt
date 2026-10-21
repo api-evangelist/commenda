@@ -1,0 +1,67 @@
+# Commenda
+
+> Commenda is the Global Business Engine — AI software to incorporate and manage global entities, filings, and tax across 70+ countries. Built for international finance teams, Commenda integrates with your ERP to handle incorporation, entity management, indirect tax (VAT/GST/sales tax), corporate tax filings, and transfer pricing documentation.
+
+Commenda serves finance teams, tax teams, controllers, legal teams, and accounting firms at startups through enterprise companies operating internationally. The platform connects to 100+ ERP and accounting integrations and is backed by local experts in every jurisdiction.
+
+## Products
+
+- [Entity Management & Incorporation](https://www.commenda.io/entity-management): Incorporate, manage, and wind down entities across 70+ countries. Includes compliance calendars, corporate governance, and local expert support.
+- [Indirect Tax Suite](https://www.commenda.io/indirect-tax): Global VAT, GST, and sales tax compliance. Calculate tax obligations in 70+ countries, manage registrations, and automate filings. Integrates with major ERPs.
+- [Transfer Pricing Suite](https://www.commenda.io/transfer-pricing): Transfer pricing documentation automation — local files, master files, and country-by-country reporting. Covers SMB through enterprise.
+- [Corporate Tax & Financial Reporting Suite](https://www.commenda.io/tax-accounting): Corporate tax filings, compliance calendar management, and consolidated group reporting across all jurisdictions.
+- [Integrations](https://www.commenda.io/integrations): Connect to 100+ business tools including NetSuite, QuickBooks, Xero, Shopify, Stripe, and more.
+- [Commenda API](https://docs.commenda.io/engine/api-introduction): Embed Commenda's compliance infrastructure directly into your own product.
+
+## Solutions
+
+- [Startups](https://www.commenda.io/solutions/startups): Global operations and compliance for early-stage companies expanding internationally.
+- [Small Business](https://www.commenda.io/solutions/small-businesses): Compliance infrastructure for growing businesses entering new markets.
+- [Mid-Market](https://www.commenda.io/solutions/mid-market): Multi-entity management and compliance for scaling companies.
+- [Enterprise](https://www.commenda.io/solutions/enterprise): Global compliance operations at scale for multinational corporations.
+- [Tax Teams](https://www.commenda.io/solutions/tax-teams): Centralize and automate global indirect and corporate tax operations.
+- [Finance Teams](https://www.commenda.io/solutions/finance-teams): Entity and compliance visibility for controllers and CFOs.
+- [Accounting Firms](https://www.commenda.io/solutions/accounting-firms): Client compliance management across borders.
+- [Controllers](https://www.commenda.io/solutions/controllers): Seamless global operations with full compliance visibility.
+- [Indirect Tax Teams](https://www.commenda.io/solutions/indirect-tax-teams): End-to-end VAT, GST, and sales tax management.
+- [Transfer Pricing Teams](https://www.commenda.io/solutions/transfer-pricing-teams): Operationalize and automate transfer pricing workflows.
+- [Legal Teams](https://www.commenda.io/solutions/legal-teams): Corporate governance and entity compliance.
+
+## Country Guides
+
+Commenda covers incorporation, tax, and compliance in 70+ countries. Featured guides:
+
+- [United States](https://www.commenda.io/country/usa): U.S. entity formation, sales tax nexus, and federal and state compliance.
+- [India](https://www.commenda.io/country/india): Indian incorporation, GST compliance, and transfer pricing rules.
+- [Ireland](https://www.commenda.io/country/ireland): Irish company formation, VAT, and EU compliance.
+- [Singapore](https://www.commenda.io/country/singapore): Singapore entity formation and GST compliance.
+- [United Kingdom](https://www.commenda.io/country/uk): UK company formation, VAT, and Companies House compliance.
+- [UAE](https://www.commenda.io/country/uae): UAE free zone and mainland entity formation and VAT compliance.
+- [Canada](https://www.commenda.io/country/canada): Canadian entity formation and GST/HST compliance.
+- [Australia](https://www.commenda.io/country/australia): Australian company formation and GST compliance.
+- [Germany](https://www.commenda.io/country/germany): German GmbH formation and VAT compliance.
+- [Italy](https://www.commenda.io/country/italy): Italian entity formation and VAT compliance.
+- [Mexico](https://www.commenda.io/country/mexico): Mexican entity formation and compliance.
+- [Estonia](https://www.commenda.io/country/estonia): Estonian e-Residency, company formation, and EU VAT compliance.
+
+## Free Tools
+
+- [Sales Tax Calculator](https://www.commenda.io/sales-tax-calculator): Calculate U.S. sales tax rates by state and city for any product or service.
+- [Global Tax ID Verification](https://www.commenda.io/tax-id-verification): Verify VAT, GST, and TIN numbers in 40+ countries - format checks plus matches against official government registries (VIES and national tax authorities).
+- [Company Name Checker](https://www.commenda.io/company-name-checker): Check U.S. company name availability before incorporation.
+- [EOR vs. Entity Calculator](https://www.commenda.io/tools/entity-vs-eor-calculator): Compare the cost and implications of hiring via employer of record versus forming a local entity.
+
+## Resources
+
+- [Blog](https://www.commenda.io/blog): Tax, compliance, and international expansion guides for finance and legal teams.
+- [Case Studies](https://www.commenda.io/case-studies): How global businesses use Commenda to expand without compliance friction.
+- [Webinars](https://www.commenda.io/webinars): On-demand and upcoming webinars on global tax and compliance topics.
+- [Research & Reports](https://www.commenda.io/reports): In-depth research on international tax and compliance trends.
+- [About Commenda](https://www.commenda.io/about): Our mission, team, and approach to global compliance.
+
+## Company
+
+Commenda Technologies Inc.
+111 Ellis St, 5th Floor, San Francisco, California 94102
+https://www.linkedin.com/company/commenda/
+https://x.com/CommendaHQ

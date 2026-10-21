@@ -1,0 +1,54 @@
+generated: '2026-10-20'
+method: derived
+generator: derive-data-model.py
+source:
+- openapi/_ae-authored/commenda-openapi-generated.yml
+notation: has_one = property $ref; has_many = array of $ref; belongs_to = <entity>_id field
+summary:
+  entities: 21
+  entities_in_spec: 21
+  relationships: 0
+entities:
+- name: GetApiV1RegistrationsRegistrationidResponse
+  fields: 23
+- name: GetApiV1RegistrationsV27C9E6679742540De944BE07Fc1F90Ae7Respo
+  fields: 1
+- name: GetWebhooksIdResponse
+  fields: 2
+- name: GetWebhooksResponse
+  fields: 2
+- name: PostApiV1Registrations7C9E6679742540De944BE07Fc1F90Ae7CloseR
+  fields: 1
+- name: PostApiV1Registrations7C9E6679742540De944BE07Fc1F90Ae7Reques
+  fields: 2
+- name: PostApiV1RegistrationsContentAvailableJurisdictionsRequest
+  fields: 2
+- name: PostApiV1RegistrationsContentPortalFieldsRequest
+  fields: 1
+- name: PostApiV1RegistrationsContentRegistrationInputOptionsRequest
+  fields: 1
+- name: PostApiV1RegistrationsListRequest
+  fields: 1
+- name: PostApiV1RegistrationsListResponse
+  fields: 2
+- name: PostApiV1RegistrationsRequest
+  fields: 6
+- name: PostApiV1RegistrationsV2ContentAvailableJurisdictionsRequest
+  fields: 2
+- name: PostApiV1RegistrationsV2ContentAvailableRegistrationsRequest
+  fields: 1
+- name: PostApiV1RegistrationsV2ContentPortalFieldsRequest
+  fields: 1
+- name: PostApiV1RegistrationsV2ContentRegistrationConditionsRequest
+  fields: 1
+- name: PostApiV1RegistrationsV2ListRequest
+  fields: 1
+- name: PostApiV1RegistrationsV2ListResponse
+  fields: 1
+- name: PostApiV1RegistrationsV2Request
+  fields: 5
+- name: PostWebhooksRequest
+  fields: 6
+- name: PostWebhooksResponse
+  fields: 2
+relationships: []

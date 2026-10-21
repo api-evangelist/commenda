@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/commenda/main/json-schema/commenda-get-api-v1-registrations-v27-c9-e6679742540-de944-be07-fc1-f90-ae7-respo-schema.json",
+  "title": "GetApiV1RegistrationsV27C9E6679742540De944BE07Fc1F90Ae7Respo",
+  "x-generated": "2026-10-20",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/commenda-openapi-generated.yml#/components/schemas/GetApiV1RegistrationsV27C9E6679742540De944BE07Fc1F90Ae7Respo",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "corporation_id": {
+          "type": "string"
+        },
+        "registration_tax_type_id": {
+          "type": "string"
+        },
+        "registration_content_id": {
+          "type": "string"
+        },
+        "tax_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "frequencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "jurisdiction_id": {
+          "type": "string"
+        },
+        "jurisdiction_name": {
+          "type": "string"
+        },
+        "jurisdiction_type": {
+          "type": "string"
+        },
+        "registration_name": {
+          "type": "string"
+        },
+        "effective_start_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "managed_filing_enabled": {
+          "type": "boolean"
+        },
+        "registered_by": {
+          "type": "string"
+        },
+        "registration_status": {
+          "type": "string"
+        },
+        "validation_status": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

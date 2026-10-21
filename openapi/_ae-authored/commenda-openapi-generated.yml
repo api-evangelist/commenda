@@ -1,0 +1,1417 @@
+openapi: 3.1.0
+info:
+  title: Commenda API
+  version: '2026-10-20'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-20: 53 operation(s) read from 20 public documentation page(s) (each
+    operation names its page in x-source). This is not the provider''s published contract; Commenda has published no machine-readable contract
+    that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 19
+    documentation: 34
+    pages-with-code: 14
+    pages-read: 20
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-20'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.commenda.io/engine/api-introduction
+  - https://docs.commenda.io/engine/indirect-tax/webhooks/webhooks.md
+  - https://docs.commenda.io/engine/indirect-tax/webhooks/webhooks-GET.md
+  - https://docs.commenda.io/engine/indirect-tax/webhooks/webhooks-LIST.md
+  - https://docs.commenda.io/engine/indirect-tax/webhooks/webhooks-POST.md
+  - https://docs.commenda.io/engine/indirect-tax/webhooks/webhooks-UPDATE.md
+  - https://docs.commenda.io/engine/indirect-tax/introduction
+  - https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+  - https://docs.commenda.io/engine/indirect-tax/registrations/registrations-POST
+  - https://docs.commenda.io/engine/indirect-tax/registrations/registrations-GET
+  - https://docs.commenda.io/engine/indirect-tax/registrations/registrations-id-GET
+  - https://docs.commenda.io/engine/indirect-tax/registrations/registrations-id-POST
+  - https://docs.commenda.io/engine/indirect-tax/registrations/registrations-id-DELETE
+  - https://docs.commenda.io/engine/indirect-tax/registrations/registrations-id-request-validation-POST
+  - https://docs.commenda.io/engine/indirect-tax/registrations/registrations-id-archive-POST
+  - https://docs.commenda.io/engine/indirect-tax/registrations/registrations-id-close-POST
+  - https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+  - https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2-POST
+  - https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2-GET
+  - https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2-id-GET
+servers:
+- url: https://transaction-tax.api.in.commenda.io
+paths:
+  /api/v1/registrations:
+    get:
+      operationId: get_api_v1_registrations
+      tags:
+      - Api
+      summary: GET /api/v1/registrations
+      x-source: https://docs.commenda.io/engine/api-introduction
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request GET  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations'  --header 'Authorization: Bearer\
+          \ <your_token>' \n ​ Company Name Checker and Compliance Calendar Preview \n These APIs take an API key in the x-api-key header. Contact\
+          \ the Commenda team to get a key. See Company Name Checker and Compliance Calendar Preview for examples. \n ​ Base URLs \n API Base\
+          \ URL Global Ind"
+    post:
+      operationId: post_api_v1_registrations
+      tags:
+      - Api
+      summary: POST /api/v1/registrations
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1RegistrationsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations'  --header 'Authorization: Bearer\
+          \ <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"corporation_id\": \"550e8400-e29b-41d4-a716-446655440000\"\
+          , \n \"registration_content_id\": \"CCT_US_STATE_CEN_06_RST\", \n \"tax_types\": [\"RST\", \"DTT\"], \n \"frequency\": \"QUARTERLY\"\
+          , \n \"effective_start_date\": \"2024"
+  /api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7:
+    post:
+      operationId: post_api_v1_registrations_7c9e6679_7425_40de_944b_e07fc1f90ae7
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1Registrations7C9E6679742540De944BE07Fc1F90Ae7Reques'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7'\
+          \  --header 'Authorization: Bearer <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"portal_id\": \"PORTAL_CA_CDTFA\"\
+          , \n \"credential_id\": \"cred_abc123\" \n }' \n Credentials are stored securely and managed separately from registrations. The credential_id\
+          \ re"
+  /api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7/archive:
+    post:
+      operationId: post_api_v1_registrations_7c9e6679_7425_40de_944b_e07fc1f90ae7_archive
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7/archive
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7/archive'\
+          \  --header 'Authorization: Bearer <your_token>' \n Archived registrations: \n Are excluded from list results unless include_archived:\
+          \ true is specified \n Do not calculate tax — archived registrations are completely excluded from tax calculations \n ​ Deleting a Regi"
+  /api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7/close:
+    post:
+      operationId: post_api_v1_registrations_7c9e6679_7425_40de_944b_e07fc1f90ae7_close
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7/close
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1Registrations7C9E6679742540De944BE07Fc1F90Ae7CloseR'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7/close'\
+          \  --header 'Authorization: Bearer <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"effective_end_date\": \"\
+          2024-12-31\" \n }' \n Closed registrations: \n Still calculate tax for transactions within the effective_start_date to effective_end_date\
+          \ rang"
+  /api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7/request-validation:
+    post:
+      operationId: post_api_v1_registrations_7c9e6679_7425_40de_944b_e07fc1f90ae7_request_validatio
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7/request-validation
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/7c9e6679-7425-40de-944b-e07fc1f90ae7/request-validation'\
+          \  --header 'Authorization: Bearer <your_token>' \n Commenda will: \n Verify your tax registration ID with the state \n Test your portal\
+          \ credentials \n Configure the account for automated filing \n Monitor the validation_status field to track progress. \n ​ S"
+  /api/v1/registrations/content/available-jurisdictions:
+    post:
+      operationId: post_api_v1_registrations_content_available_jurisdictions
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/content/available-jurisdictions
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1RegistrationsContentAvailableJurisdictionsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/content/available-jurisdictions'\
+          \  --header 'Authorization: Bearer <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"filters\": { \n \"countries\"\
+          : [\"US\"], \n \"states\": [\"CA\", \"TX\", \"NY\"], \n \"types\": [\"STATE_OR_PROVINCE\"] \n }, \n \"limit\": 50 \n }' \n This returns\
+          \ jurisdictions with their jurisdi"
+  /api/v1/registrations/content/portal-fields:
+    post:
+      operationId: post_api_v1_registrations_content_portal_fields
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/content/portal-fields
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1RegistrationsContentPortalFieldsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/content/portal-fields'  --header\
+          \ 'Authorization: Bearer <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"filters\": { \n \"registration_content_ids\"\
+          : [\"CCT_US_STATE_CEN_06_RST\"] \n } \n }' \n This returns the portal information and required credential fields (username, password,\
+          \ PIN, etc.) f"
+  /api/v1/registrations/content/registration-input-options:
+    post:
+      operationId: post_api_v1_registrations_content_registration_input_options
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/content/registration-input-options
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1RegistrationsContentRegistrationInputOptionsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/content/registration-input-options'\
+          \  --header 'Authorization: Bearer <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"filters\": { \n \"jurisdiction_ids\"\
+          : [\"JUR_US_STATE_CA\", \"JUR_US_STATE_TX\"] \n } \n }' \n Response includes registration_content_id , available tax_types , frequencies\
+          \ , and "
+  /api/v1/registrations/list:
+    post:
+      operationId: post_api_v1_registrations_list
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/list
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations-GET
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1RegistrationsListRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiV1RegistrationsListResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl - All cURL - By State cURL - Local Only cURL - Include Archived All By State By Status By Jurisdiction Type By Name Include\
+          \ Archived curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/list'  --header 'Authorization:\
+          \ Bearer <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"corporation_id\": \"550e8400-e29b-41d4-a716-446655440000\"\
+          \ \n }'"
+  /api/v1/registrations/v2:
+    post:
+      operationId: post_api_v1_registrations_v2
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/v2
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1RegistrationsV2Request'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/v2'  --header 'Authorization: Bearer\
+          \ <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"corporation_id\": \"550e8400-e29b-41d4-a716-446655440000\"\
+          , \n \"registration_tax_type_id\": \"REG_STATE_CEN_06_RST\", \n \"tax_types\": [\"RST\", \"DTT\"], \n \"frequencies\": [\"QUARTERLY\"\
+          ], \n \"effective_start_date\": "
+  /api/v1/registrations/v2/7c9e6679-7425-40de-944b-e07fc1f90ae7:
+    get:
+      operationId: get_api_v1_registrations_v2_7c9e6679_7425_40de_944b_e07fc1f90ae7
+      tags:
+      - Api
+      summary: GET /api/v1/registrations/v2/7c9e6679-7425-40de-944b-e07fc1f90ae7
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2-id-GET
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiV1RegistrationsV27C9E6679742540De944BE07Fc1F90Ae7Respo'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl curl --request GET  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/v2/7c9e6679-7425-40de-944b-e07fc1f90ae7'\
+          \  --header 'Authorization: Bearer <your_token>' \n 200 404 - Not found 400 - Invalid UUID { \n \"data\" : { \n \"id\" : \"7c9e6679-7425-40de-944b-e07fc1f90ae7\"\
+          \ , \n \"corporation_id\" : \"550e8400-e29b-41d4-a716-446655440000\" , \n \"registration_tax_type_id\" : \"REG_STATE_CEN_06"
+  /api/v1/registrations/v2/content/available-jurisdictions:
+    post:
+      operationId: post_api_v1_registrations_v2_content_available_jurisdictions
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/v2/content/available-jurisdictions
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1RegistrationsV2ContentAvailableJurisdictionsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/v2/content/available-jurisdictions'\
+          \  --header 'Authorization: Bearer <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"filters\": { \n \"countries\"\
+          : [\"US\"], \n \"types\": [\"STATE_OR_PROVINCE\"] \n }, \n \"limit\": 50 \n }' \n ​ Step 2: Get registration options \n Use the Available\
+          \ Registrations endpo"
+  /api/v1/registrations/v2/content/available-registrations:
+    post:
+      operationId: post_api_v1_registrations_v2_content_available_registrations
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/v2/content/available-registrations
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1RegistrationsV2ContentAvailableRegistrationsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/v2/content/available-registrations'\
+          \  --header 'Authorization: Bearer <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"jurisdiction_ids\": [\"\
+          JUR_US_STATE_CA\"] \n }' \n ​ Step 3: Check conditions (if applicable) \n For trade bloc or international registrations, check conditions\
+          \ before creati"
+  /api/v1/registrations/v2/content/portal-fields:
+    post:
+      operationId: post_api_v1_registrations_v2_content_portal_fields
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/v2/content/portal-fields
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1RegistrationsV2ContentPortalFieldsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/v2/content/portal-fields'  --header\
+          \ 'Authorization: Bearer <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"portal_ids\": [\"PORTAL_CA_CDTFA\"\
+          ] \n }' \n ​ Step 5: Create the registration \n Use the Create Registration endpoint: "
+  /api/v1/registrations/v2/content/registration-conditions:
+    post:
+      operationId: post_api_v1_registrations_v2_content_registration_conditions
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/v2/content/registration-conditions
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1RegistrationsV2ContentRegistrationConditionsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --request POST  --url 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/v2/content/registration-conditions'\
+          \  --header 'Authorization: Bearer <your_token>'  --header 'Content-Type: application/json'  --data '{ \n \"registration_tax_type_id\"\
+          : \"REG_TRADEBLOC_EU_3000_UOSS_VAT\" \n }' \n ​ Step 4: Get portal credential requirements \n Use the Portal Fields endpoint to understand\
+          \ what cred"
+  /api/v1/registrations/v2/list:
+    post:
+      operationId: post_api_v1_registrations_v2_list
+      tags:
+      - Api
+      summary: POST /api/v1/registrations/v2/list
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2-GET
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1RegistrationsV2ListRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiV1RegistrationsV2ListResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl - All cURL - Filtered All registrations By country and state Include archived With pagination curl --request POST  --url\
+          \ 'https://transaction-tax.api.in.commenda.io/api/v1/registrations/v2/list'  --header 'Authorization: Bearer <your_token>'  --header\
+          \ 'Content-Type: application/json'  --data '{ \n \"corporation_id\": \"550e8400-e29b-41d4-a716-446655440000\" \n }' "
+  /api/v1/registrations/{registrationId}:
+    delete:
+      operationId: delete_api_v1_registrations_registrationId
+      tags:
+      - Api
+      summary: Permanently delete a registration
+      description: Deletes a registration permanently. This action cannot be undone. Registrations with validation_status VALID cannot be deleted
+        via API.
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations-id-DELETE
+      parameters:
+      - name: registrationId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '204':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_v1_registrations_registrationId
+      tags:
+      - Api
+      summary: Get Registration
+      description: Retrieve the full details of a registration, including its current status, jurisdiction information, and configuration.
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations-id-GET
+      parameters:
+      - name: registrationId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiV1RegistrationsRegistrationidResponse'
+      x-evidence:
+        kind: documentation
+  /calculate:
+    post:
+      operationId: post_calculate
+      tags:
+      - Calculate
+      summary: Global Indirect Tax Calculation
+      description: Calculate accurate indirect tax rates for each transaction across supported countries.
+      x-source: https://docs.commenda.io/engine/indirect-tax/introduction
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations:
+    get:
+      operationId: get_registrations
+      tags:
+      - Registrations
+      summary: API documentation - Commenda
+      x-source: https://docs.commenda.io/engine/api-introduction
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_registrations
+      tags:
+      - Registrations
+      summary: Create a new registration
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/content/available-jurisdictions:
+    post:
+      operationId: post_registrations_content_available_jurisdictions
+      tags:
+      - Registrations
+      summary: Discover jurisdictions where you can register
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/content/portal-fields:
+    post:
+      operationId: post_registrations_content_portal_fields
+      tags:
+      - Registrations
+      summary: Get portal credential requirements
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/content/registration-input-options:
+    post:
+      operationId: post_registrations_content_registration_input_options
+      tags:
+      - Registrations
+      summary: Get tax types, frequencies for jurisdictions
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/bulk/registration-status:
+    post:
+      operationId: post_registrations_v2_bulk_registration_status
+      tags:
+      - Registrations
+      summary: Update status for multiple registrations
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/bulk/request-validation:
+    post:
+      operationId: post_registrations_v2_bulk_request_validation
+      tags:
+      - Registrations
+      summary: Request validation for multiple registrations
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/content/available-jurisdictions:
+    post:
+      operationId: post_registrations_v2_content_available_jurisdictions
+      tags:
+      - Registrations
+      summary: Search for available jurisdictions
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/content/available-registrations:
+    post:
+      operationId: post_registrations_v2_content_available_registrations
+      tags:
+      - Registrations
+      summary: Get registration options for jurisdictions
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/content/portal-fields:
+    post:
+      operationId: post_registrations_v2_content_portal_fields
+      tags:
+      - Registrations
+      summary: Get portal credential requirements
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/content/registration-conditions:
+    post:
+      operationId: post_registrations_v2_content_registration_conditions
+      tags:
+      - Registrations
+      summary: Get conditions for a registration type
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/content/supported-regions:
+    get:
+      operationId: get_registrations_v2_content_supported_regions
+      tags:
+      - Registrations
+      summary: Get supported regions and jurisdiction filters
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/content/tax-type-details:
+    post:
+      operationId: post_registrations_v2_content_tax_type_details
+      tags:
+      - Registrations
+      summary: Get tax type descriptions
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/credentials/by-portal/{portalId}:
+    get:
+      operationId: get_registrations_v2_credentials_by_portal_portalId
+      tags:
+      - Registrations
+      summary: Look up credentials by portal
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      parameters:
+      - name: portalId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/{id}:
+    delete:
+      operationId: delete_registrations_v2_id
+      tags:
+      - Registrations
+      summary: Delete a registration
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_registrations_v2_id
+      tags:
+      - Registrations
+      summary: Get a single registration
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_registrations_v2_id
+      tags:
+      - Registrations
+      summary: Update a registration
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/{id}/archive:
+    post:
+      operationId: post_registrations_v2_id_archive
+      tags:
+      - Registrations
+      summary: Archive a registration
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/{id}/close:
+    post:
+      operationId: post_registrations_v2_id_close
+      tags:
+      - Registrations
+      summary: Close a registration
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/v2/{id}/form-data:
+    get:
+      operationId: get_registrations_v2_id_form_data
+      tags:
+      - Registrations
+      summary: Get supplementary form data
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_registrations_v2_id_form_data
+      tags:
+      - Registrations
+      summary: Update supplementary form data
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/v2/registrations-v2
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/{id}:
+    delete:
+      operationId: delete_registrations_id
+      tags:
+      - Registrations
+      summary: Delete a registration
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_registrations_id
+      tags:
+      - Registrations
+      summary: Get a single registration
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_registrations_id
+      tags:
+      - Registrations
+      summary: Update a registration
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/{id}/archive:
+    post:
+      operationId: post_registrations_id_archive
+      tags:
+      - Registrations
+      summary: Archive a registration (stops calculations)
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/{id}/close:
+    post:
+      operationId: post_registrations_id_close
+      tags:
+      - Registrations
+      summary: Close a registration (sets end date)
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /registrations/{id}/request-validation:
+    post:
+      operationId: post_registrations_id_request_validation
+      tags:
+      - Registrations
+      summary: Request Commenda validation
+      x-source: https://docs.commenda.io/engine/indirect-tax/registrations/registrations
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /webhooks:
+    get:
+      operationId: get_webhooks
+      tags:
+      - Webhooks
+      summary: List all webhook.
+      description: Get a list of all webhooks registered with Commenda.
+      x-source: https://docs.commenda.io/engine/indirect-tax/webhooks/webhooks-LIST.md
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetWebhooksResponse'
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_webhooks
+      tags:
+      - Webhooks
+      summary: Create a new webhook.
+      description: Register your webhook with Commenda.
+      x-source: https://docs.commenda.io/engine/indirect-tax/webhooks/webhooks-POST.md
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostWebhooksRequest'
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostWebhooksResponse'
+      x-evidence:
+        kind: documentation
+  /webhooks/{id}:
+    delete:
+      operationId: delete_webhooks_id
+      tags:
+      - Webhooks
+      summary: Delete a webhook
+      x-source: https://docs.commenda.io/engine/indirect-tax/webhooks/webhooks.md
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_webhooks_id
+      tags:
+      - Webhooks
+      summary: Get a webhook.
+      description: Get a webhook registered with Commenda.
+      x-source: https://docs.commenda.io/engine/indirect-tax/webhooks/webhooks-GET.md
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetWebhooksIdResponse'
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_webhooks_id
+      tags:
+      - Webhooks
+      summary: Update your webhook details
+      x-source: https://docs.commenda.io/engine/indirect-tax/webhooks/webhooks.md
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /webhooks/test/trigger/{id}:
+    post:
+      operationId: post_webhooks_test_trigger_id
+      tags:
+      - Webhooks
+      summary: Manually trigger a webhook call
+      x-source: https://docs.commenda.io/engine/indirect-tax/webhooks/webhooks.md
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostApiV1RegistrationsRequest:
+      type: object
+      properties:
+        corporation_id:
+          type: string
+        registration_content_id:
+          type: string
+        tax_types:
+          type: array
+          items:
+            type: string
+        frequency:
+          type: string
+        effective_start_date:
+          type: string
+          format: date
+        tax_registration_id:
+          type: string
+    PostApiV1Registrations7C9E6679742540De944BE07Fc1F90Ae7Reques:
+      type: object
+      properties:
+        portal_id:
+          type: string
+        credential_id:
+          type: string
+    PostApiV1Registrations7C9E6679742540De944BE07Fc1F90Ae7CloseR:
+      type: object
+      properties:
+        effective_end_date:
+          type: string
+          format: date
+    PostApiV1RegistrationsContentAvailableJurisdictionsRequest:
+      type: object
+      properties:
+        filters:
+          type: object
+          properties:
+            countries:
+              type: array
+              items:
+                type: string
+            states:
+              type: array
+              items:
+                type: string
+            types:
+              type: array
+              items:
+                type: string
+        limit:
+          type: integer
+    PostApiV1RegistrationsContentPortalFieldsRequest:
+      type: object
+      properties:
+        filters:
+          type: object
+          properties:
+            registration_content_ids:
+              type: array
+              items:
+                type: string
+    PostApiV1RegistrationsContentRegistrationInputOptionsRequest:
+      type: object
+      properties:
+        filters:
+          type: object
+          properties:
+            jurisdiction_ids:
+              type: array
+              items:
+                type: string
+    PostApiV1RegistrationsListRequest:
+      type: object
+      properties:
+        corporation_id:
+          type: string
+    PostApiV1RegistrationsListResponse:
+      type: object
+      properties:
+        message:
+          type: string
+        data:
+          type: object
+          properties:
+            registrations:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  corporation_id:
+                    type: string
+                  registration_content_id:
+                    type: string
+                  jurisdiction_id:
+                    type: string
+                  jurisdiction_type:
+                    type: string
+                  jurisdiction_name:
+                    type: string
+                  country:
+                    type: string
+                  state_or_province:
+                    type: string
+                  tax_types:
+                    type: array
+                    items:
+                      type: string
+                  frequency:
+                    type: string
+                  effective_start_date:
+                    type: string
+                    format: date
+                  tax_registration_id:
+                    type: string
+                  portal_id:
+                    type: string
+                  credential_id:
+                    type: string
+                  registration_status:
+                    type: string
+                  validation_status:
+                    type: string
+                  registration_type:
+                    type: string
+                  registered_by:
+                    type: string
+                  email_alias:
+                    type: string
+                  created_at:
+                    type: string
+                    format: date-time
+    PostApiV1RegistrationsV2Request:
+      type: object
+      properties:
+        corporation_id:
+          type: string
+        registration_tax_type_id:
+          type: string
+        tax_types:
+          type: array
+          items:
+            type: string
+        frequencies:
+          type: array
+          items:
+            type: string
+        effective_start_date:
+          type: string
+          format: date
+    GetApiV1RegistrationsV27C9E6679742540De944BE07Fc1F90Ae7Respo:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            id:
+              type: string
+            corporation_id:
+              type: string
+            registration_tax_type_id:
+              type: string
+            registration_content_id:
+              type: string
+            tax_types:
+              type: array
+              items:
+                type: string
+            frequencies:
+              type: array
+              items:
+                type: string
+            jurisdiction_id:
+              type: string
+            jurisdiction_name:
+              type: string
+            jurisdiction_type:
+              type: string
+            registration_name:
+              type: string
+            effective_start_date:
+              type: string
+              format: date
+            managed_filing_enabled:
+              type: boolean
+            registered_by:
+              type: string
+            registration_status:
+              type: string
+            validation_status:
+              type: string
+            created_at:
+              type: string
+              format: date-time
+            updated_at:
+              type: string
+              format: date-time
+    PostApiV1RegistrationsV2ContentAvailableJurisdictionsRequest:
+      type: object
+      properties:
+        filters:
+          type: object
+          properties:
+            countries:
+              type: array
+              items:
+                type: string
+            types:
+              type: array
+              items:
+                type: string
+        limit:
+          type: integer
+    PostApiV1RegistrationsV2ContentAvailableRegistrationsRequest:
+      type: object
+      properties:
+        jurisdiction_ids:
+          type: array
+          items:
+            type: string
+    PostApiV1RegistrationsV2ContentPortalFieldsRequest:
+      type: object
+      properties:
+        portal_ids:
+          type: array
+          items:
+            type: string
+    PostApiV1RegistrationsV2ContentRegistrationConditionsRequest:
+      type: object
+      properties:
+        registration_tax_type_id:
+          type: string
+    PostApiV1RegistrationsV2ListRequest:
+      type: object
+      properties:
+        corporation_id:
+          type: string
+    PostApiV1RegistrationsV2ListResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            registrations:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  corporation_id:
+                    type: string
+                  registration_tax_type_id:
+                    type: string
+                  registration_content_id:
+                    type: string
+                  tax_types:
+                    type: array
+                    items:
+                      type: string
+                  frequencies:
+                    type: array
+                    items:
+                      type: string
+                  jurisdiction_id:
+                    type: string
+                  jurisdiction_name:
+                    type: string
+                  jurisdiction_type:
+                    type: string
+                  registration_name:
+                    type: string
+                  effective_start_date:
+                    type: string
+                    format: date
+                  registered_by:
+                    type: string
+                  registration_status:
+                    type: string
+                  validation_status:
+                    type: string
+                  created_at:
+                    type: string
+                    format: date-time
+            total:
+              type: integer
+            cursor:
+              type: string
+    GetApiV1RegistrationsRegistrationidResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the registration
+        corporation_id:
+          type: string
+          description: The corporation this registration belongs to
+        registration_content_id:
+          type: string
+          description: Content ID identifying the jurisdiction and tax type
+        jurisdiction_id:
+          type: string
+          description: Unique identifier for the jurisdiction
+        jurisdiction_type:
+          type: string
+          description: 'Type: STATE_OR_PROVINCE , CITY , COUNTY , DISTRICT , LOCAL , COUNTRY , TERRITORY , TRADEBLOC'
+        jurisdiction_name:
+          type: string
+          description: Human-readable name of the jurisdiction
+        country:
+          type: string
+          description: ISO 3166-1 alpha-2 country code
+        state_or_province:
+          type: string
+          description: State or province code (e.g., “CA”, “TX”)
+        tax_types:
+          type: array
+          description: Tax types registered for (e.g., ["RST", "DTT"] )
+        frequency:
+          type: string
+          description: Filing frequency
+        effective_start_date:
+          type: string
+          description: When the registration became effective (YYYY-MM-DD)
+        effective_end_date:
+          type: string
+          description: When the registration ended (YYYY-MM-DD), if closed
+        tax_registration_id:
+          type: string
+          description: State-issued tax ID or permit number
+        portal_id:
+          type: string
+          description: Tax portal identifier
+        credential_id:
+          type: string
+          description: Reference to stored portal credentials
+        registration_status:
+          type: string
+          description: REGISTRATION_IN_PROGRESS or REGISTERED
+        validation_status:
+          type: string
+          description: PENDING , VALIDATION_IN_PROGRESS , VALID , or INVALID
+        registration_type:
+          type: string
+          description: EXISTING or NEW
+        registered_by:
+          type: string
+          description: 'Who created the registration: API , USER , COMMENDA'
+        email_alias:
+          type: string
+          description: Email alias for tax correspondence
+        archived_at:
+          type: string
+          description: Timestamp if archived, otherwise null
+        created_at:
+          type: string
+          description: When the registration was created
+        updated_at:
+          type: string
+          description: When the registration was last updated
+    GetWebhooksResponse:
+      type: object
+      properties:
+        '200':
+          type: string
+          description: Sales tax registration response
+        '400':
+          type: string
+          description: Bad request
+    PostWebhooksRequest:
+      type: object
+      properties:
+        api_version:
+          type: string
+          description: The version of the API for which you registered the webhook. This helps to maintain backward compatibility. If in newer
+            versions the event payload is changed, your webhook will keep receiving the payload from this api version. This will be 'v1.0' for
+            now and we will come up with more versions and a changelog later.
+        name:
+          type: string
+          description: Optional name to define the purpose of the webhook.
+        topics:
+          type: array
+          description: An array of topics to listen to. When any of these topics are triggered, the webhook will be pinged.
+        url:
+          type: string
+          description: Your webhook url that will be hit once an event happens. Only HTTPS urls are allowed.
+        key:
+          type: string
+          description: Secure string provided by the user. It will be used during HMCA process to keep the event payloads secure. Make sure to
+            keep it safe as you will need it during validating event payloads. This key won't be returned back by any other endpoint.
+        status:
+          type: string
+          description: If the webhook is active or not. If a webhook is disabled it won't be called when a topic is triggered.
+      required:
+      - api_version
+      - topics
+      - url
+      - key
+      - status
+    PostWebhooksResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          description: CreateWebhookResponse object
+        message:
+          type: string
+          description: Successfully registered webhook.
+    GetWebhooksIdResponse:
+      type: object
+      properties:
+        '200':
+          type: string
+          description: Sales tax registration response
+        '400':
+          type: string
+          description: Bad request
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+security:
+- bearer: []
+tags:
+- name: Api
+- name: Calculate
+- name: Registrations
+- name: Webhooks

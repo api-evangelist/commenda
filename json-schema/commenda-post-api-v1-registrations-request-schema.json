@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/commenda/main/json-schema/commenda-post-api-v1-registrations-request-schema.json",
+  "title": "PostApiV1RegistrationsRequest",
+  "x-generated": "2026-10-20",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/commenda-openapi-generated.yml#/components/schemas/PostApiV1RegistrationsRequest",
+  "type": "object",
+  "properties": {
+    "corporation_id": {
+      "type": "string"
+    },
+    "registration_content_id": {
+      "type": "string"
+    },
+    "tax_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "frequency": {
+      "type": "string"
+    },
+    "effective_start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "tax_registration_id": {
+      "type": "string"
+    }
+  }
+}

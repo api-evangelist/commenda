@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/commenda/main/json-schema/commenda-post-api-v1-registrations-list-response-schema.json",
+  "title": "PostApiV1RegistrationsListResponse",
+  "x-generated": "2026-10-20",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/commenda-openapi-generated.yml#/components/schemas/PostApiV1RegistrationsListResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "registrations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "corporation_id": {
+                "type": "string"
+              },
+              "registration_content_id": {
+                "type": "string"
+              },
+              "jurisdiction_id": {
+                "type": "string"
+              },
+              "jurisdiction_type": {
+                "type": "string"
+              },
+              "jurisdiction_name": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              },
+              "state_or_province": {
+                "type": "string"
+              },
+              "tax_types": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "frequency": {
+                "type": "string"
+              },
+              "effective_start_date": {
+                "type": "string",
+                "format": "date"
+              },
+              "tax_registration_id": {
+                "type": "string"
+              },
+              "portal_id": {
+                "type": "string"
+              },
+              "credential_id": {
+                "type": "string"
+              },
+              "registration_status": {
+                "type": "string"
+              },
+              "validation_status": {
+                "type": "string"
+              },
+              "registration_type": {
+                "type": "string"
+              },
+              "registered_by": {
+                "type": "string"
+              },
+              "email_alias": {
+                "type": "string"
+              },
+              "created_at": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

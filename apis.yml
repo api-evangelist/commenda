@@ -1,23 +1,121 @@
 aid: commenda
+
 name: Commenda
-description: 'Commenda is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://assets.commenda.io/website/og/commenda-opengraph-default-v2.webp
+
+description: Commenda provides an AI‑native global compliance platform that helps businesses manage entity formation, local director services,
+  registered address, compliance calendars, indirect tax, transfer pricing and accounting across 70+ countries. The platform integrates AI to
+  automate data collection, reporting and regulatory filing, offering tools for startups, mid‑market and enterprise customers to stay compliant
+  worldwide.
+
 url: https://raw.githubusercontent.com/api-evangelist/commenda/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
 - Company
-apis: []
+- AI
+- Compliance
+- Global
+- Tax
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/commenda-rules.yml
+- type: JSONLD
+  url: json-ld/commenda-context.jsonld
+- type: Vocabulary
+  url: vocabulary/commenda-vocabulary.yml
+- type: DataModel
+  url: data-model/commenda-data-model.yml
+- type: Conformance
+  url: conformance/commenda-conformance.yml
+- type: LLMsTxt
+  url: llms/commenda-llms.txt
+- type: AgentCard
+  url: a2a/commenda-a2a.yml
+- type: WellKnown
+  url: well-known/commenda-well-known.yml
+- type: Hosts
+  url: hosts/commenda-hosts.yml
+- type: Vendors
+  url: vendors/commenda-vendors.yml
+- type: TermsOfService
+  url: https://www.commenda.io/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.commenda.io/privacy-policy
+- type: Login
+  url: https://app.commenda.io/auth/signin
+- type: GitHubOrganization
+  url: https://github.com/commenda-eng
+- type: GettingStarted
+  url: https://docs.commenda.io/introduction/quickstart
+- type: ChangeLog
+  url: https://www.commenda.io/changelog
+- type: Documentation
+  url: https://docs.commenda.io/
+- type: APIReference
+  url: https://docs.commenda.io/llms.txt
+- type: DomainSecurity
+  url: security/commenda-domain-security.yml
 - type: Website
-  url: https://commenda.io/
+  url: https://www.commenda.io/
+- type: Blog
+  url: https://www.commenda.io/blog
+
+apis:
+- aid: commenda:commenda-api
+  name: Commenda API
+  description: 'Commenda API as documented publicly: 53 operations. Contract generated from the documentation by API Evangelist (2026-10-20);
+    not the provider''s own document.'
+  humanURL: https://docs.commenda.io/engine/api-introduction
+  baseURL: https://transaction-tax.api.in.commenda.io
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/commenda-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/commenda-get-api-v1-registrations-registrationid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/commenda-post-webhooks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/commenda-post-api-v1-registrations-list-response-schema.json
+  - type: JSONSchema
+    url: json-schema/commenda-post-api-v1-registrations-v2-list-response-schema.json
+  - type: JSONSchema
+    url: json-schema/commenda-get-api-v1-registrations-v27-c9-e6679742540-de944-be07-fc1-f90-ae7-respo-schema.json
+  - type: JSONSchema
+    url: json-schema/commenda-post-api-v1-registrations-request-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The documentation site loads content via JavaScript and provides no machine‑readable OpenAPI spec.
+  evidence:
+  - url: https://www.commenda.io
+    status: 200
+  checked: '2026-10-20'
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 25
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,183 @@
+{
+  "@context": {
+    "@vocab": "https://commenda.io/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "commenda": "https://commenda.io/schema#",
+    "PostApiV1RegistrationsRequest": "commenda:PostApiV1RegistrationsRequest",
+    "corporation_id": {
+      "@id": "commenda:corporation_id",
+      "@type": "xsd:string"
+    },
+    "registration_content_id": {
+      "@id": "commenda:registration_content_id",
+      "@type": "xsd:string"
+    },
+    "tax_types": {
+      "@id": "commenda:tax_types",
+      "@container": "@list"
+    },
+    "frequency": {
+      "@id": "commenda:frequency",
+      "@type": "xsd:string"
+    },
+    "effective_start_date": {
+      "@id": "commenda:effective_start_date",
+      "@type": "xsd:date"
+    },
+    "tax_registration_id": {
+      "@id": "commenda:tax_registration_id",
+      "@type": "xsd:string"
+    },
+    "PostApiV1Registrations7C9E6679742540De944BE07Fc1F90Ae7Reques": "commenda:PostApiV1Registrations7C9E6679742540De944BE07Fc1F90Ae7Reques",
+    "portal_id": {
+      "@id": "commenda:portal_id",
+      "@type": "xsd:string"
+    },
+    "credential_id": {
+      "@id": "commenda:credential_id",
+      "@type": "xsd:string"
+    },
+    "PostApiV1Registrations7C9E6679742540De944BE07Fc1F90Ae7CloseR": "commenda:PostApiV1Registrations7C9E6679742540De944BE07Fc1F90Ae7CloseR",
+    "effective_end_date": {
+      "@id": "commenda:effective_end_date",
+      "@type": "xsd:date"
+    },
+    "PostApiV1RegistrationsContentAvailableJurisdictionsRequest": "commenda:PostApiV1RegistrationsContentAvailableJurisdictionsRequest",
+    "filters": {
+      "@id": "commenda:filters"
+    },
+    "limit": {
+      "@id": "commenda:limit",
+      "@type": "xsd:integer"
+    },
+    "PostApiV1RegistrationsContentPortalFieldsRequest": "commenda:PostApiV1RegistrationsContentPortalFieldsRequest",
+    "PostApiV1RegistrationsContentRegistrationInputOptionsRequest": "commenda:PostApiV1RegistrationsContentRegistrationInputOptionsRequest",
+    "PostApiV1RegistrationsListRequest": "commenda:PostApiV1RegistrationsListRequest",
+    "PostApiV1RegistrationsListResponse": "commenda:PostApiV1RegistrationsListResponse",
+    "message": {
+      "@id": "commenda:message",
+      "@type": "xsd:string"
+    },
+    "data": {
+      "@id": "commenda:data"
+    },
+    "PostApiV1RegistrationsV2Request": "commenda:PostApiV1RegistrationsV2Request",
+    "registration_tax_type_id": {
+      "@id": "commenda:registration_tax_type_id",
+      "@type": "xsd:string"
+    },
+    "frequencies": {
+      "@id": "commenda:frequencies",
+      "@container": "@list"
+    },
+    "GetApiV1RegistrationsV27C9E6679742540De944BE07Fc1F90Ae7Respo": "commenda:GetApiV1RegistrationsV27C9E6679742540De944BE07Fc1F90Ae7Respo",
+    "PostApiV1RegistrationsV2ContentAvailableJurisdictionsRequest": "commenda:PostApiV1RegistrationsV2ContentAvailableJurisdictionsRequest",
+    "PostApiV1RegistrationsV2ContentAvailableRegistrationsRequest": "commenda:PostApiV1RegistrationsV2ContentAvailableRegistrationsRequest",
+    "jurisdiction_ids": {
+      "@id": "commenda:jurisdiction_ids",
+      "@container": "@list"
+    },
+    "PostApiV1RegistrationsV2ContentPortalFieldsRequest": "commenda:PostApiV1RegistrationsV2ContentPortalFieldsRequest",
+    "portal_ids": {
+      "@id": "commenda:portal_ids",
+      "@container": "@list"
+    },
+    "PostApiV1RegistrationsV2ContentRegistrationConditionsRequest": "commenda:PostApiV1RegistrationsV2ContentRegistrationConditionsRequest",
+    "PostApiV1RegistrationsV2ListRequest": "commenda:PostApiV1RegistrationsV2ListRequest",
+    "PostApiV1RegistrationsV2ListResponse": "commenda:PostApiV1RegistrationsV2ListResponse",
+    "GetApiV1RegistrationsRegistrationidResponse": "commenda:GetApiV1RegistrationsRegistrationidResponse",
+    "id": {
+      "@id": "commenda:id",
+      "@type": "xsd:string"
+    },
+    "jurisdiction_id": {
+      "@id": "commenda:jurisdiction_id",
+      "@type": "xsd:string"
+    },
+    "jurisdiction_type": {
+      "@id": "commenda:jurisdiction_type",
+      "@type": "xsd:string"
+    },
+    "jurisdiction_name": {
+      "@id": "commenda:jurisdiction_name",
+      "@type": "xsd:string"
+    },
+    "country": {
+      "@id": "commenda:country",
+      "@type": "xsd:string"
+    },
+    "state_or_province": {
+      "@id": "commenda:state_or_province",
+      "@type": "xsd:string"
+    },
+    "registration_status": {
+      "@id": "commenda:registration_status",
+      "@type": "xsd:string"
+    },
+    "validation_status": {
+      "@id": "commenda:validation_status",
+      "@type": "xsd:string"
+    },
+    "registration_type": {
+      "@id": "commenda:registration_type",
+      "@type": "xsd:string"
+    },
+    "registered_by": {
+      "@id": "commenda:registered_by",
+      "@type": "xsd:string"
+    },
+    "email_alias": {
+      "@id": "commenda:email_alias",
+      "@type": "xsd:string"
+    },
+    "archived_at": {
+      "@id": "commenda:archived_at",
+      "@type": "xsd:string"
+    },
+    "created_at": {
+      "@id": "commenda:created_at",
+      "@type": "xsd:string"
+    },
+    "updated_at": {
+      "@id": "commenda:updated_at",
+      "@type": "xsd:string"
+    },
+    "GetWebhooksResponse": "commenda:GetWebhooksResponse",
+    "PostWebhooksRequest": "commenda:PostWebhooksRequest",
+    "api_version": {
+      "@id": "commenda:api_version",
+      "@type": "xsd:string"
+    },
+    "name": {
+      "@id": "commenda:name",
+      "@type": "xsd:string"
+    },
+    "topics": {
+      "@id": "commenda:topics",
+      "@container": "@list"
+    },
+    "url": {
+      "@id": "commenda:url",
+      "@type": "xsd:string"
+    },
+    "key": {
+      "@id": "commenda:key",
+      "@type": "xsd:string"
+    },
+    "status": {
+      "@id": "commenda:status",
+      "@type": "xsd:string"
+    },
+    "PostWebhooksResponse": "commenda:PostWebhooksResponse",
+    "GetWebhooksIdResponse": "commenda:GetWebhooksIdResponse"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Commenda API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Commenda's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-20) from openapi/_ae-authored/commenda-openapi-generated.yml.",
+  "dcterms:created": "2026-10-20",
+  "dcterms:source": [
+    "openapi/_ae-authored/commenda-openapi-generated.yml"
+  ]
+}

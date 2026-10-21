@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/commenda/main/json-schema/commenda-post-webhooks-request-schema.json",
+  "title": "PostWebhooksRequest",
+  "x-generated": "2026-10-20",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/commenda-openapi-generated.yml#/components/schemas/PostWebhooksRequest",
+  "type": "object",
+  "properties": {
+    "api_version": {
+      "type": "string",
+      "description": "The version of the API for which you registered the webhook. This helps to maintain backward compatibility. If in newer versions the event payload is changed, your webhook will keep receiving the payload from this api version. This will be 'v1.0' for now and we will come up with more versions and a changelog later."
+    },
+    "name": {
+      "type": "string",
+      "description": "Optional name to define the purpose of the webhook."
+    },
+    "topics": {
+      "type": "array",
+      "description": "An array of topics to listen to. When any of these topics are triggered, the webhook will be pinged."
+    },
+    "url": {
+      "type": "string",
+      "description": "Your webhook url that will be hit once an event happens. Only HTTPS urls are allowed."
+    },
+    "key": {
+      "type": "string",
+      "description": "Secure string provided by the user. It will be used during HMCA process to keep the event payloads secure. Make sure to keep it safe as you will need it during validating event payloads. This key won't be returned back by any other endpoint."
+    },
+    "status": {
+      "type": "string",
+      "description": "If the webhook is active or not. If a webhook is disabled it won't be called when a topic is triggered."
+    }
+  },
+  "required": [
+    "api_version",
+    "topics",
+    "url",
+    "key",
+    "status"
+  ]
+}

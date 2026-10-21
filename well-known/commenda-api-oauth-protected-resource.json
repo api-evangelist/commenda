@@ -1,0 +1,1 @@
+{"resource":"https://api.commenda.io/api/v1/mcp","authorization_servers":["https://api.commenda.io"],"bearer_methods_supported":["header"],"scopes_supported":["read","write"]}

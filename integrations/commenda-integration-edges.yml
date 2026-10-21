@@ -1,0 +1,16 @@
+generated: '2026-10-20'
+method: none
+source:
+- https://zapier.com/apps/commenda/integrations
+- https://n8n.io/integrations/commenda/
+- https://composio.dev/toolkits/commenda
+- https://monid.ai/tools/commenda
+checked:
+- https://composio.dev/toolkits/commenda
+- https://monid.ai/tools/commenda
+- https://n8n.io/integrations/commenda/
+- https://zapier.com/apps/commenda/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
